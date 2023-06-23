@@ -15,7 +15,7 @@
     const randomProvider = providers[Math.floor(Math.random() * providers.length)];  
     const email = faker.internet.email({firstName: name, provider: randomProvider}); 
 
-    const socialMediaAccount = faker.internet.userName({firstName: firstName}); 
+    const socialMediaAccount = faker.internet.userName({firstName: firstName, lastName: lastName}); 
 
     const randomChoice = choices[Math.floor(Math.random() * choices.length)];
 
