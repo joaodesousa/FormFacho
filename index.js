@@ -13,7 +13,7 @@
 
     const providers = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com'];  
     const randomProvider = providers[Math.floor(Math.random() * providers.length)];  
-    const email = faker.internet.email({firstName: name, provider: randomProvider}); 
+    const email = faker.internet.email({firstName: firstName, lastName: lastName, provider: randomProvider}); 
 
     const socialMediaAccount = faker.internet.userName({firstName: firstName, lastName: lastName}); 
 
